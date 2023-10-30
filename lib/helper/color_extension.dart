@@ -11,5 +11,5 @@ extension HexColor on Color {
 
   /// Prefixes a hash sign if [leadingHashSign] is set to `true` (default is `true`).
   String toHex({bool leadingHashSign = true}) => '${leadingHashSign ? '#' : ''}'
-      '${value.toRadixString(16).substring(2).padLeft(6, '0').toUpperCase()}';
+      '${value.toRadixString(16).toUpperCase()}';
 }
