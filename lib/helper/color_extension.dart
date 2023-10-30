@@ -15,5 +15,6 @@ extension HexColor on Color {
   String toHex({bool leadingHashSign = true}) {
     String str = '${leadingHashSign ? '#' : ''}';
     str = str + '${value.substring(2).padLeft(6, '0').toRadixString(16).toUpperCase()}';
+    return str;
   }
 }
